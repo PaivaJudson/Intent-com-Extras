@@ -19,5 +19,7 @@ public class MainActivity2 extends AppCompatActivity {
         txt_resultado = findViewById(R.id.txt_resultado);
 
         intent = getIntent();
+        String nome = intent.getExtras().getString("keyNome");
+        txt_resultado.setText("Olá "+nome);
     }
 }
